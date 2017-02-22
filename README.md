@@ -7,3 +7,8 @@ The add-on is experimental, and can be tested via the "about:debugging" page in 
 <br>
 ### To do
 * Implement a disable/enable option for the add-on
+<br>
+<br>
+<br>
+Example:
+![screenshot](https://github.com/TheAdnan/Quora-Nightly/blob/master/test_screenshot/Screenshot_1.jpg?raw=true)
