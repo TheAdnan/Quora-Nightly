@@ -2,31 +2,35 @@
 
   "manifest_version": 2,
   "name": "Quora nightly",
-  "version": "1.0",
+  "version": "2.0",
   "description": "Quora nightly style",
 
   "icons": {
     "48": "icons/icon.png"
   },
-  
+
   "browser_action": {
-    "default_icon": "icons/icon.png"
+    "default_icon": {
+        "48": "icons/icon.png"
+    }
   },
- 
+
 	"content_scripts": [
     {
       "matches": ["*://*.quora.com/*"],
-	  "js": ["nightly.js"]
-	  
+	    "js": ["nightly.js", "light.js"]
     }
 	],
+  "background": {
+    "scripts": ["background.js"]
+  },
 
 
 	"permissions": [
     "activeTab",
-	"tabs",
-	"webRequest"
+	  "tabs",
+	  "webRequest"
 	]
-  
+
 
 }
