@@ -15,22 +15,22 @@
     }
   },
 
-	"content_scripts": [
+  "content_scripts": [
     {
       "matches": ["*://*.quora.com/*"],
-	    "js": ["nightly.js", "light.js"]
+      "js": ["nightly.js", "light.js"]
     }
-	],
+  ],
   "background": {
     "scripts": ["background.js"]
   },
 
 
-	"permissions": [
+  "permissions": [
     "activeTab",
-	  "tabs",
-	  "webRequest"
-	]
+    "tabs",
+    "webRequest"
+  ]
 
 
 }
