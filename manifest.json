@@ -1,32 +1,23 @@
 {
 
-  "manifest_version": 2,
-  "name": "Quora nightly",
-  "version": "1.0",
-  "description": "Quora nightly style",
+    "manifest_version": 2,
+    "name": "Quora nightly",
+    "version": "1.0",
+    "description": "Quora nightly style",
 
-  "icons": {
-    "48": "icons/icon.png"
-  },
-  
-  "browser_action": {
-    "default_icon": "icons/icon.png"
-  },
- 
-	"content_scripts": [
-    {
-      "matches": ["*://*.quora.com/*"],
-	  "js": ["nightly.js"]
-	  
-    }
-	],
+    "background": {
+        "scripts": ["nightly.js"]
+    },
 
+    "page_action": {
+        "default_icon": "icons/icon.png",
+        "browser_style": true
+    },
 
-	"permissions": [
-    "activeTab",
-	"tabs",
-	"webRequest"
-	]
-  
-
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "*://*.quora.com/*"
+    ]
 }
