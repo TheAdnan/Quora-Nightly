@@ -1,4 +1,4 @@
-const CSS = "* { background: rgba(0,0,0, 0.8)!important; color: rgba(255,255,255, 0.6)!important;}";
+const CSS = "* { background: rgba(41, 0, 4, 0.79)!important; color: rgba(255,255,255, 0.6)!important;}";
 const TOOLTIP_ENABLE = "Enable night mode";
 const TOOLTIP_DISABLE = "Disable night mode";
 const URL = "quora.com";
